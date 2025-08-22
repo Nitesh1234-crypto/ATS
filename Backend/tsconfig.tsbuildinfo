@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/api/v1/routes/index.ts","./src/api/v1/routes/score.ts","./src/controllers/score.controller.ts","./src/middlewares/upload.middleware.ts","./src/services/file.service.ts","./src/services/queue.service.ts","./src/types/index.ts","./src/utils/env.ts"],"version":"5.9.2"}

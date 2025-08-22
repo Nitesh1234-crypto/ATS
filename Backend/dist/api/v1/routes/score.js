@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.atsRouter = void 0;
+const express_1 = require("express");
+const score_controller_1 = require("../../../controllers/score.controller");
+const upload_middleware_1 = require("../../../middlewares/upload.middleware");
+exports.atsRouter = (0, express_1.Router)();
+exports.atsRouter.post('/score', upload_middleware_1.uploadResume, score_controller_1.scoreResumeAgainstJob);
+exports.atsRouter.get('/score/:requestId', score_controller_1.getScoringResult);
+exports.atsRouter.get('/versions', score_controller_1.getVersions);
